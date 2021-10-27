@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="RunOnlyThirdTests">
+    <test name="RunOnlyThirdTests">
+        <groups>
+            <run>
+                <include name="ThirdTest"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="frontend.suites.SmokeTest"></class>
+            <class name="frontend.suites.RegressTest"></class>
+            <class name="frontend.suites.FailureTest"></class>
+        </classes>
+    </test>
+</suite>
+
